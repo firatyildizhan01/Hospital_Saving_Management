@@ -33,7 +33,7 @@ namespace Hospital_Saving_Management
             komut.Parameters.AddWithValue("@p6", cmbCinsiyet.Text);
             komut.ExecuteNonQuery();
             bgl.baglanti().Close();
-            MessageBox.Show("kaydınız gerçekleşmiştir Şifreniz:" + mskŞifre.Text,"bilgi",MessageBoxButtons.OK,)
+            MessageBox.Show("kaydınız gerçekleşmiştir Şifreniz:" + mskŞifre.Text, "bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
 
