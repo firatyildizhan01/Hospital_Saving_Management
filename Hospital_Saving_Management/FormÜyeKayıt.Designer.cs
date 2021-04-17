@@ -38,10 +38,10 @@ namespace Hospital_Saving_Management
             this.label4 = new System.Windows.Forms.Label();
             this.mskTel = new System.Windows.Forms.MaskedTextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.mskCinsiyet = new System.Windows.Forms.MaskedTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.mskŞifre = new System.Windows.Forms.MaskedTextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.cmbCinsiyet = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -120,13 +120,6 @@ namespace Hospital_Saving_Management
             this.label5.TabIndex = 0;
             this.label5.Text = "Cinsiyet:";
             // 
-            // mskCinsiyet
-            // 
-            this.mskCinsiyet.Location = new System.Drawing.Point(83, 155);
-            this.mskCinsiyet.Name = "mskCinsiyet";
-            this.mskCinsiyet.Size = new System.Drawing.Size(100, 20);
-            this.mskCinsiyet.TabIndex = 1;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -153,6 +146,15 @@ namespace Hospital_Saving_Management
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // cmbCinsiyet
+            // 
+            this.cmbCinsiyet.FormattingEnabled = true;
+            this.cmbCinsiyet.Location = new System.Drawing.Point(83, 155);
+            this.cmbCinsiyet.Name = "cmbCinsiyet";
+            this.cmbCinsiyet.Size = new System.Drawing.Size(100, 21);
+            this.cmbCinsiyet.TabIndex = 3;
+            this.cmbCinsiyet.SelectedIndexChanged += new System.EventHandler(this.cmbCinsiyet_SelectedIndexChanged);
+            // 
             // Form2
             // 
             this.AcceptButton = this.button1;
@@ -160,10 +162,10 @@ namespace Hospital_Saving_Management
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LemonChiffon;
             this.ClientSize = new System.Drawing.Size(195, 218);
+            this.Controls.Add(this.cmbCinsiyet);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.mskŞifre);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.mskCinsiyet);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.mskTel);
             this.Controls.Add(this.label4);
@@ -192,9 +194,9 @@ namespace Hospital_Saving_Management
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.MaskedTextBox mskTel;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.MaskedTextBox mskCinsiyet;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.MaskedTextBox mskŞifre;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox cmbCinsiyet;
     }
 }
