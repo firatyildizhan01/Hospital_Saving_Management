@@ -52,17 +52,17 @@
     <Compile Include="DoktorGiriş.Designer.cs">
       <DependentUpon>DoktorGiriş.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Giriş ekranı.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Giriş ekranı.Designer.cs">
+      <DependentUpon>Giriş ekranı.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="FormÜyeKayıt.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="FormÜyeKayıt.Designer.cs">
+      <DependentUpon>FormÜyeKayıt.cs</DependentUpon>
     </Compile>
     <Compile Include="bilgiDüzenle.cs">
       <SubType>Form</SubType>
@@ -126,14 +126,21 @@
     <Compile Include="SecreterDetay.Designer.cs">
       <DependentUpon>SecreterDetay.cs</DependentUpon>
     </Compile>
+    <Compile Include="sekreterGİriş.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sekreterGİriş.Designer.cs">
+      <DependentUpon>sekreterGİriş.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlBaglanti.cs" />
     <EmbeddedResource Include="DoktorGiriş.resx">
       <DependentUpon>DoktorGiriş.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Giriş ekranı.resx">
+      <DependentUpon>Giriş ekranı.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="FormÜyeKayıt.resx">
+      <DependentUpon>FormÜyeKayıt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="bilgiDüzenle.resx">
       <DependentUpon>bilgiDüzenle.cs</DependentUpon>
@@ -173,6 +180,9 @@
     </Compile>
     <EmbeddedResource Include="SecreterDetay.resx">
       <DependentUpon>SecreterDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sekreterGİriş.resx">
+      <DependentUpon>sekreterGİriş.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

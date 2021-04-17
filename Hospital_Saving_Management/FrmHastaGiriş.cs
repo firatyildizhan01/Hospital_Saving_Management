@@ -26,5 +26,12 @@ namespace Hospital_Saving_Management
         {
 
         }
+
+        private void lnkÜye_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form2 jhg = new Form2();
+            jhg.Show();
+            this.Hide();
+        }
     }
 }

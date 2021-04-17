@@ -80,6 +80,7 @@ namespace Hospital_Saving_Management
             this.lnkÜye.TabIndex = 4;
             this.lnkÜye.TabStop = true;
             this.lnkÜye.Text = "Üye Ol";
+            this.lnkÜye.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkÜye_LinkClicked);
             // 
             // btnEnter
             // 
@@ -93,6 +94,7 @@ namespace Hospital_Saving_Management
             // 
             // FrmHastaGiriş
             // 
+            this.AcceptButton = this.btnEnter;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(277, 147);
