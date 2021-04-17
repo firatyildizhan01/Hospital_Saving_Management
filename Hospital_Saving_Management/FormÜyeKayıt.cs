@@ -31,7 +31,9 @@ namespace Hospital_Saving_Management
             komut.Parameters.AddWithValue("@p4",mskTel.Text );
             komut.Parameters.AddWithValue("@p5",mskŞifre.Text);
             komut.Parameters.AddWithValue("@p6", cmbCinsiyet.Text);
-
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("kaydınız gerçekleşmiştir Şifreniz:" + mskŞifre.Text,"bilgi",MessageBoxButtons.OK,)
 
         }
 
