@@ -24,13 +24,13 @@ namespace Hospital_Saving_Management
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("İnsert into hasta_tablo (HastaAd,HastaSoyad,HastaTc,HastaTelefon,HastaSifre,HastaCinsiyet values (@p1,@p2,@p3,@p4,@p5,@p6)", bgl.baglanti());
-            komut.Parameters.AddWithValue("@p1", mskAd.Text);
-            komut.Parameters.AddWithValue("@p2", mskSoyad.Text);
+            SqlCommand komut = new SqlCommand("insert into hasta_tablo (HastaAd,HastaSoyad,HastaTc,HastaTelefon,HastaSifre,HastaCinsiyet) values (@p1,@p2,@p3,@p4,@p5,@p6)", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1",mskAd.Text);
+            komut.Parameters.AddWithValue("@p2",mskSoyad.Text);
             komut.Parameters.AddWithValue("@p3",mskTc.Text );
             komut.Parameters.AddWithValue("@p4",mskTel.Text );
             komut.Parameters.AddWithValue("@p5",mskŞifre.Text);
-            komut.Parameters.AddWithValue("@p6", cmbCinsiyet.Text);
+            komut.Parameters.AddWithValue("@p6",cmbCinsiyet.Text);
             komut.ExecuteNonQuery();
             bgl.baglanti().Close();
             MessageBox.Show("kaydınız gerçekleşmiştir Şifreniz:" + mskŞifre.Text, "bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);

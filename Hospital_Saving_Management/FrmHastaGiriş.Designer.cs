@@ -63,6 +63,7 @@ namespace Hospital_Saving_Management
             this.mskTc.Size = new System.Drawing.Size(100, 20);
             this.mskTc.TabIndex = 2;
             this.mskTc.ValidatingType = typeof(int);
+            this.mskTc.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mskTc_MaskInputRejected);
             // 
             // txtŞifre
             // 

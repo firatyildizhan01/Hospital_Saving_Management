@@ -58,7 +58,7 @@ namespace Hospital_Saving_Management
             this.mskAd.Location = new System.Drawing.Point(83, 25);
             this.mskAd.Name = "mskAd";
             this.mskAd.Size = new System.Drawing.Size(100, 20);
-            this.mskAd.TabIndex = 1;
+            this.mskAd.TabIndex = 0;
             // 
             // label2
             // 
@@ -91,7 +91,7 @@ namespace Hospital_Saving_Management
             this.mskTc.Mask = "00000000000000";
             this.mskTc.Name = "mskTc";
             this.mskTc.Size = new System.Drawing.Size(100, 20);
-            this.mskTc.TabIndex = 1;
+            this.mskTc.TabIndex = 2;
             this.mskTc.ValidatingType = typeof(int);
             // 
             // label4
@@ -109,7 +109,7 @@ namespace Hospital_Saving_Management
             this.mskTel.Mask = "(999) 000-0000";
             this.mskTel.Name = "mskTel";
             this.mskTel.Size = new System.Drawing.Size(100, 20);
-            this.mskTel.TabIndex = 1;
+            this.mskTel.TabIndex = 3;
             // 
             // label5
             // 
@@ -134,14 +134,14 @@ namespace Hospital_Saving_Management
             this.mskŞifre.Location = new System.Drawing.Point(83, 129);
             this.mskŞifre.Name = "mskŞifre";
             this.mskŞifre.Size = new System.Drawing.Size(100, 20);
-            this.mskŞifre.TabIndex = 1;
+            this.mskŞifre.TabIndex = 4;
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(83, 183);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 23);
-            this.button1.TabIndex = 2;
+            this.button1.TabIndex = 6;
             this.button1.Text = "Kayıt";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -149,10 +149,13 @@ namespace Hospital_Saving_Management
             // cmbCinsiyet
             // 
             this.cmbCinsiyet.FormattingEnabled = true;
-            this.cmbCinsiyet.Location = new System.Drawing.Point(83, 155);
+            this.cmbCinsiyet.Items.AddRange(new object[] {
+            "Kadın",
+            "Erkek"});
+            this.cmbCinsiyet.Location = new System.Drawing.Point(83, 152);
             this.cmbCinsiyet.Name = "cmbCinsiyet";
             this.cmbCinsiyet.Size = new System.Drawing.Size(100, 21);
-            this.cmbCinsiyet.TabIndex = 3;
+            this.cmbCinsiyet.TabIndex = 5;
             this.cmbCinsiyet.SelectedIndexChanged += new System.EventHandler(this.cmbCinsiyet_SelectedIndexChanged);
             // 
             // Form2

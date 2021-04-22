@@ -88,11 +88,11 @@
     <Compile Include="FrmBrans.Designer.cs">
       <DependentUpon>FrmBrans.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmDoktorDetay.cs">
+    <Compile Include="hastadetay.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmDoktorDetay.Designer.cs">
-      <DependentUpon>FrmDoktorDetay.cs</DependentUpon>
+    <Compile Include="hastadetay.Designer.cs">
+      <DependentUpon>hastadetay.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmDoktorDty.cs">
       <SubType>Form</SubType>
@@ -154,8 +154,8 @@
     <EmbeddedResource Include="FrmBrans.resx">
       <DependentUpon>FrmBrans.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmDoktorDetay.resx">
-      <DependentUpon>FrmDoktorDetay.cs</DependentUpon>
+    <EmbeddedResource Include="hastadetay.resx">
+      <DependentUpon>hastadetay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDoktorDty.resx">
       <DependentUpon>FrmDoktorDty.cs</DependentUpon>
