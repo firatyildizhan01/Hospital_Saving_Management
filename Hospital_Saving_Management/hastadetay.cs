@@ -52,5 +52,17 @@ namespace Hospital_Saving_Management
             }
             mjk.baglanti().Close();
         }
+
+        private void cmbBrans_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlCommand komut3 = new SqlCommand("Select DoktorAd,DoktorSoyad From Doctor where DoktorBrans=@p1", mjk.baglanti());
+            komut3.Parameters.AddWithValue("@p1", cmbBrans.Text);
+            SqlDataReader dr3 = komut3.ExecuteReader();
+            while (dr3.Read())
+            {
+                cmbDoktor.Items.Add(dr3[0] + " " + dr3[1]);
+            }
+            mjk.baglanti().Close();
+        }
     }
 }

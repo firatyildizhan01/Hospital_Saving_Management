@@ -37,7 +37,7 @@ namespace Hospital_Saving_Management
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbDoktor = new System.Windows.Forms.ComboBox();
             this.cmbBrans = new System.Windows.Forms.ComboBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label7 = new System.Windows.Forms.Label();
@@ -109,7 +109,7 @@ namespace Hospital_Saving_Management
             // 
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.richTextBox1);
-            this.groupBox2.Controls.Add(this.comboBox2);
+            this.groupBox2.Controls.Add(this.cmbDoktor);
             this.groupBox2.Controls.Add(this.cmbBrans);
             this.groupBox2.Controls.Add(this.linkLabel1);
             this.groupBox2.Controls.Add(this.label7);
@@ -139,13 +139,13 @@ namespace Hospital_Saving_Management
             this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = "";
             // 
-            // comboBox2
+            // cmbDoktor
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(73, 63);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 2;
+            this.cmbDoktor.FormattingEnabled = true;
+            this.cmbDoktor.Location = new System.Drawing.Point(73, 63);
+            this.cmbDoktor.Name = "cmbDoktor";
+            this.cmbDoktor.Size = new System.Drawing.Size(121, 21);
+            this.cmbDoktor.TabIndex = 2;
             // 
             // cmbBrans
             // 
@@ -154,6 +154,7 @@ namespace Hospital_Saving_Management
             this.cmbBrans.Name = "cmbBrans";
             this.cmbBrans.Size = new System.Drawing.Size(121, 21);
             this.cmbBrans.TabIndex = 2;
+            this.cmbBrans.SelectedIndexChanged += new System.EventHandler(this.cmbBrans_SelectedIndexChanged);
             // 
             // linkLabel1
             // 
@@ -265,7 +266,7 @@ namespace Hospital_Saving_Management
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmbDoktor;
         private System.Windows.Forms.ComboBox cmbBrans;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label7;
